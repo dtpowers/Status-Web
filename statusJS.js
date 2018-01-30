@@ -74,6 +74,11 @@ function lastStatus() {
   currentStatus = lastStatus;
 }
 
+function firstStatus() {
+  displayStatus(statusObj['1'])
+  currentStatus = 1
+}
+
 function randStatus() {
   index = Math.floor((Math.random() * lastStatus) + 1);
   displayStatus(statusObj[index]);
@@ -85,7 +90,7 @@ function randStatus() {
 //On load, initialize page
 $(function() {
   showLoading();
-  console.log('ready');
+  //console.log('ready');
   getStatusJSON();
 
 })
