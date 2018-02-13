@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Status</title>
 		<script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="statusStyle.css">
 		<script type="text/javascript" src="statusJS.js"></script>
@@ -19,18 +24,43 @@
 		</script>
 	</head>
 	<body>
-		<div class="loader" id="load">Loading...</div>
-		<div class="content" id="main">
-			<div class="header"><img src="load.gif" id="pic"></div>
-			<div id="image"></div>
-			<div id="statusContainer">Status goes here</div>
-			<div class="navigation">
-				<div id="First">First</div>
-				<div id="Back">Back</div>
-				<div id= Rand>Random</div>
-				<div id="Next">Next</div>
-				<div id="Lastest">Latest</div>
+		
+		<div class="container" >
+			<div class="row" id="load">
+					<div class="col-sm">
+						
+					</div>
+					<div id="picContainer" class="col-sm">
+						<div class="loader" id="load">Loading...</div>
+					</div>
+					<div class="col-sm">
+						
+					</div>
+				</div>
+			
+			<div class="stuff" id="main">
+				<div class="row">
+					<div class="col-sm">
+						
+					</div>
+					<div id="picContainer" class="col-sm">
+						<img src="load.gif" id="pic" class="img-responsive">
+					</div>
+					<div class="col-sm">
+						
+					</div>
+				</div>
+				
+				<div id="statusContainer">Status goes here</div>
+				<div class="navigation">
+					<div id="First">First</div>
+					<div id="Back">Back</div>
+					<div id="Rand">Random</div>
+					<div id="Next">Next</div>
+					<div id="Latest">Latest</div>
+				</div>
 			</div>
+			
 		</div>
 	</body>
 </html>
